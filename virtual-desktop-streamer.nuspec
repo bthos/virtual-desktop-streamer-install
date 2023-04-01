@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>virtual-desktop-streamer</id>
+    <version>1.26.4</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <owners>almo</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Virtual Desktop Streamer (Install)</title>
+    <authors>Virtual Desktop Inc.</authors>
+    <projectUrl>https://www.vrdesktop.net</projectUrl>
+    <iconUrl>https://img.informer.com/icons/png/128/5506/5506854.png</iconUrl>
+    <copyright>Virtual Desktop Inc.</copyright>
+    <tags>vr streamer</tags>
+    <summary>Your PC in VR</summary>
+    <description>Watch movies, browse the web or play games on a giant virtual screen.</description>
+    <releaseNotes>
+      Release Notes - Version 1.26.4
+      - Added subtitle support with streamed videos
+      - Added keyboard shortcuts to switch monitor and toggle VR mode
+      - Added VoiceMeeter compatibility option in Streamer window
+      - Improved head/controller prediction on Pico
+      - Improved spacewarp (SSW) quality by increasing the motion vector resolution on Quest 2 and Quest Pro
+      - Improved resolution of portrait monitors
+      - Added Swedish and Irish keyboard layouts
+      - Added Processor/memory information in the About tab
+      - Increased disconnection time after removing headset from 1 to 5 minutes
+      - Fixed timewarp layer positioning in some VR games
+      - Fixed video download queue when cancelling a download
+      - Fixed rare issue with random windows opening after connecting
+      - Fixed rare issue where desktop would not appear after connecting
+      - Fixed long press to always trigger contextual menu in Windows
+      - Fixed compatibility issues with Remote Desktop
+      - Fixed keyboard positioning so that it doesn't overlap the screen
+      - Fixed issue with app exiting when connecting/disconnecting a bluetooth keyboard/mouse on Pico
+      - Fixed bluetooth mouse input on macOS
+      - Fixed compatibility with: Space Engine, Hitman 3, Grapple Tournament
+
+
+      Not all games are compatible with Virtual Desktop.
+
+      Additional Notes
+      You can launch games that aren't part of your Oculus or Steam library by right-clicking the Streamer icon, selecting "Launch Game..." and locating the executable. Alternatively, you can inject games through a batch file (.bat) by using: VirtualDesktop.Streamer.exe "[ExecutablePath]"    
+    </releaseNotes>
+    <!-- =============================== -->
+
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -8,7 +8,6 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   fileType      = 'EXE'
   url           = $url
-  url64bit      = $url
 
   softwareName  = 'Virtual Desktop Streamer*'
 
